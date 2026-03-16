@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quantum Image Encryption</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="app">
+
+<header>
+
+<h1>Quantum Image Encryption</h1>
+<p>Quantum Inspired Secure Image Encryption System</p>
+
+</header>
+
+<div class="top-controls">
+
+<label class="upload-btn">
+Upload Image
+<input type="file" id="imageInput">
+</label>
+
+<button onclick="encryptImage()">Encrypt</button>
+<button onclick="decryptImage()">Decrypt</button>
+<button onclick="downloadImage()">Download</button>
+
+</div>
+
+<div class="workspace">
+
+<div class="card">
+
+<h2>Original Image</h2>
+
+<canvas id="originalCanvas"></canvas>
+
+</div>
+
+<div class="card">
+
+<h2>Encrypted Image</h2>
+
+<canvas id="encryptedCanvas"></canvas>
+
+</div>
+
+</div>
+
+<div class="bottom-panel">
+
+<div class="card small">
+
+<h3>Encryption Key</h3>
+
+<input id="keyInput" placeholder="Generated key will appear here">
+
+</div>
+
+<div class="card small">
+
+<h3>System Log</h3>
+
+<div id="logs"></div>
+
+</div>
+
+</div>
+
+<div class="progress-bar">
+
+<div id="progress"></div>
+
+</div>
+
+</div>
+
+</body>
+</html>
